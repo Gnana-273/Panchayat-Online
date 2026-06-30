@@ -884,7 +884,7 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
           <div className="lg:col-span-7 flex justify-center relative">
             <div className="relative w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-200 aspect-[16/10]">
               <img
-                src="/src/assets/images/regenerated_image_1782739627902.png"
+                src="/images/regenerated_image_1782739627902.png"
                 alt="Indian Village Gram Panchayat Digitalization"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
