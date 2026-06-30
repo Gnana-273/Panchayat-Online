@@ -40,7 +40,7 @@ const NEWS_DATA: NewsItem[] = [
     tag: "Water Supply",
     excerpt: "The major repairs on the sub-canal drinking water pipeline supplying Ward 2 and Ward 3 have been completed ahead of schedule by the sanitation wing.",
     content: "The water supply department is pleased to announce that water line reinforcement and filtering upgrades at the main overhead reservoir have been fully executed. Residents of Ward 2 (Market Area) and Ward 3 (School District) who experienced partial low pressure last week will now receive full-pressure clean filtered water. Water testing has been conducted under WHO guidelines to ensure pristine safety. We thank all citizens for their cooperative patience during the 48-hour scheduled maintenance window.",
-    image: "/src/assets/images/regenerated_image_1782739745990.png",
+    image: "/images/regenerated_image_1782739745990.png",
     urgency: "Important",
     authority: "Panchayat Water & Sanitation Committee"
   },
@@ -52,7 +52,7 @@ const NEWS_DATA: NewsItem[] = [
     tag: "Budget 2026",
     excerpt: "The annual budget allocation meeting has approved ₹45 Lakhs for village electrification, road repaving, and smart water meter setup.",
     content: "Under the chair of the Sarpanch, the public budget review panel approved the development roadmap for the 2026-2027 fiscal year. Major funding highlights include ₹18 Lakhs dedicated to solar-powered LED streetlight expansion, ₹15 Lakhs for Ward 4 Bypass link road repaving, and ₹12 Lakhs for implementing secondary rainwater harvesting basins. All residents are invited to download the transparent budget sheet from the digital registry desk or review it in-person at the Panchayat Center.",
-    image: "/src/assets/images/regenerated_image_1782739871984.png",
+    image: "/images/regenerated_image_1782739871984.png",
     urgency: "Normal",
     authority: "Gram Panchayat Budget Council"
   },
@@ -64,7 +64,7 @@ const NEWS_DATA: NewsItem[] = [
     tag: "Digital India",
     excerpt: "A dedicated facilitation kiosk has been launched at the Panchayat office to assist farming families with land digitisation.",
     content: "As part of the digital governance sweep, the land registration desk is conducting a 2-week camp helping residents verify their land records on the national Dharani portal. Our trained computer assistants will help map your land surveys and seed biometric details to your identity records free of cost. This registration ensures eligibility for future farming credit schemes, fertilizers, and subsidy distributions. Please bring a copy of your Aadhaar card, current registration, and phone.",
-    image: "/src/assets/images/regenerated_image_1782740373766.png",
+    image: "/images/regenerated_image_1782740373766.png",
     urgency: "Normal",
     authority: "Revenue Department Kiosk"
   },
@@ -76,7 +76,7 @@ const NEWS_DATA: NewsItem[] = [
     tag: "Disaster Preparedness",
     excerpt: "A coordinated de-siltation drive is being carried out across major drains in the bypass and school districts to prevent stagnation.",
     content: "To guarantee smooth drainage during the upcoming heavy monsoon season, the Panchayat Sanitation Wing has launched an emergency clearance drive. Heavy excavator machinery has been deployed to de-clog primary canals and reinforce weak banks. Citizens are requested not to deposit plastic waste or garden debris near storm drains. In case of waterlogging or localized blockages, please immediately report the issue in the 'Panchayat Online' portal with a photo for instant routing to our ground response vehicle.",
-    image: "/src/assets/images/regenerated_image_1782741875035.png",
+    image: "/images/regenerated_image_1782741875035.png",
     urgency: "Critical",
     authority: "Disaster Management & Safety Committee"
   }
