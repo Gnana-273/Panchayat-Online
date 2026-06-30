@@ -1,0 +1,212 @@
+{
+  "entities": {
+    "CommunityIssue": {
+      "title": "CommunityIssue",
+      "description": "A community reported issue or complaint",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "category": { "type": "string" },
+        "status": { "type": "string" },
+        "urgency": { "type": "string" },
+        "location": {
+          "type": "object",
+          "properties": {
+            "lat": { "type": "number" },
+            "lng": { "type": "number" },
+            "address": { "type": "string" },
+            "ward": { "type": "string" }
+          },
+          "required": ["lat", "lng", "address", "ward"]
+        },
+        "reporter": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "avatar": { "type": "string" },
+            "email": { "type": "string" }
+          },
+          "required": ["name", "avatar", "email"]
+        },
+        "isAnonymous": { "type": "boolean" },
+        "video": { "type": "string" },
+        "upvotes": { "type": "number" },
+        "verifiedByCount": { "type": "number" },
+        "flagCount": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "image": { "type": "string" },
+        "resolutionImage": { "type": "string" },
+        "officialRemarks": { "type": "string" },
+        "assignedDept": { "type": "string" },
+        "timeline": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "string" },
+              "title": { "type": "string" },
+              "description": { "type": "string" },
+              "timestamp": { "type": "string" },
+              "actor": { "type": "string" }
+            }
+          }
+        },
+        "upvotedBy": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "verifiedBy": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "flaggedBy": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["id", "title", "description", "category", "status", "urgency", "location", "reporter", "upvotes", "verifiedByCount", "flagCount", "createdAt", "updatedAt", "timeline"]
+    },
+    "CitizenProfile": {
+      "title": "CitizenProfile",
+      "description": "Panchayat citizen identity profile",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "name": { "type": "string" },
+        "avatar": { "type": "string" },
+        "coins": { "type": "number" },
+        "reportsCount": { "type": "number" },
+        "verificationsCount": { "type": "number" },
+        "rankName": { "type": "string" },
+        "badges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "icon": { "type": "string" },
+              "color": { "type": "string" },
+              "unlockedAt": { "type": "string" }
+            }
+          }
+        }
+      },
+      "required": ["email", "name", "avatar", "coins", "reportsCount", "verificationsCount", "rankName", "badges"]
+    },
+    "SocialPost": {
+      "title": "SocialPost",
+      "description": "Discussion post in local Social Hub",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "content": { "type": "string" },
+        "author": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "avatar": { "type": "string" },
+            "email": { "type": "string" }
+          },
+          "required": ["name", "avatar", "email"]
+        },
+        "isAnonymous": { "type": "boolean" },
+        "location": {
+          "type": "object",
+          "properties": {
+            "lat": { "type": "number" },
+            "lng": { "type": "number" },
+            "address": { "type": "string" },
+            "ward": { "type": "string" }
+          }
+        },
+        "image": { "type": "string" },
+        "video": { "type": "string" },
+        "hashtags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "mentions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "likes": { "type": "number" },
+        "likedBy": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "content", "author", "likes", "createdAt"]
+    },
+    "SocialComment": {
+      "title": "SocialComment",
+      "description": "A comment on a social hub post",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "postId": { "type": "string" },
+        "content": { "type": "string" },
+        "author": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "avatar": { "type": "string" },
+            "email": { "type": "string" }
+          },
+          "required": ["name", "avatar", "email"]
+        },
+        "isAnonymous": { "type": "boolean" },
+        "mentions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "postId", "content", "author", "createdAt"]
+    },
+    "PanchayatNotification": {
+      "title": "PanchayatNotification",
+      "description": "Alert or update notification",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "issueId": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "message": { "type": "string" },
+        "channel": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "read": { "type": "boolean" }
+      },
+      "required": ["id", "title", "message", "channel", "timestamp", "read"]
+    }
+  },
+  "firestore": {
+    "/issues/{issueId}": {
+      "schema": "CommunityIssue",
+      "description": "Collection of community complaints"
+    },
+    "/profiles/{profileId}": {
+      "schema": "CitizenProfile",
+      "description": "Collection of citizen user profiles keyed by user email or uid"
+    },
+    "/posts/{postId}": {
+      "schema": "SocialPost",
+      "description": "Collection of community forum posts"
+    },
+    "/posts/{postId}/comments/{commentId}": {
+      "schema": "SocialComment",
+      "description": "Comments nested inside forum posts"
+    },
+    "/notifications/{notificationId}": {
+      "schema": "PanchayatNotification",
+      "description": "Push or SMS notifications sent to citizens"
+    }
+  }
+}

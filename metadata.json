@@ -1,0 +1,6 @@
+{
+  "name": "Panchayat Online",
+  "description": "An interactive citizen engagement and complaint resolution platform for local villages, with AI-powered categorization, predictive insights, live GIS mapping, and citizen rewards.",
+  "requestFramePermissions": ["geolocation", "camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

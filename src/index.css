@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-brand-primary: #0A7B47; /* Deep Green */
+  --color-brand-secondary: #1976D2; /* Government Blue */
+  --color-brand-accent: #FFC107; /* Sunrise Gold */
+  --color-brand-success: #4CAF50;
+  --color-brand-warning: #FF9800;
+  --color-brand-error: #E53935;
+  --color-brand-info: #03A9F4;
+
+  /* Map indigo to Deep Green Theme (#0A7B47) */
+  --color-indigo-50: #f0fdf4;
+  --color-indigo-100: #dcfce7;
+  --color-indigo-200: #bbf7d0;
+  --color-indigo-300: #86efac;
+  --color-indigo-400: #4ade80;
+  --color-indigo-500: #22c55e;
+  --color-indigo-600: #0A7B47; /* Primary Deep Green */
+  --color-indigo-700: #15803d;
+  --color-indigo-800: #166534;
+  --color-indigo-900: #14532d;
+  --color-indigo-950: #052e16;
+
+  /* Map emerald to Deep Green Theme (#0A7B47) */
+  --color-emerald-50: #f0fdf4;
+  --color-emerald-100: #dcfce7;
+  --color-emerald-200: #bbf7d0;
+  --color-emerald-300: #86efac;
+  --color-emerald-400: #4ade80;
+  --color-emerald-500: #22c55e;
+  --color-emerald-600: #0A7B47; /* Primary Deep Green */
+  --color-emerald-700: #15803d;
+  --color-emerald-800: #166534;
+  --color-emerald-900: #14532d;
+  --color-emerald-950: #052e16;
+
+  /* Map violet to Government Blue (#1976D2) */
+  --color-violet-50: #eff6ff;
+  --color-violet-100: #dbeafe;
+  --color-violet-200: #bfdbfe;
+  --color-violet-300: #93c5fd;
+  --color-violet-400: #60a5fa;
+  --color-violet-500: #3b82f6;
+  --color-violet-600: #1976D2; /* Government Blue */
+  --color-violet-700: #1d4ed8;
+  --color-violet-800: #1e40af;
+  --color-violet-900: #1e3a8a;
+  --color-violet-950: #172554;
+
+  /* Map amber to Sunrise Gold Theme (#FFC107) */
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-200: #fde68a;
+  --color-amber-300: #fcd34d;
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #FFC107; /* Sunrise Gold */
+  --color-amber-600: #d97706;
+  --color-amber-700: #b45309;
+  --color-amber-800: #92400e;
+  --color-amber-900: #78350f;
+  --color-amber-950: #451a03;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth active glowing effects */
+.glow-primary {
+  box-shadow: 0 0 15px rgba(10, 123, 71, 0.4);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 15px rgba(25, 118, 210, 0.3);
+}
+
+.glow-accent {
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+}
+
+/* Gradient Presets based on Panchayat Online corporate standards */
+.bg-gradient-panchayat {
+  background: linear-gradient(135deg, #0A7B47 0%, #1976D2 100%);
+}
+
+.bg-gradient-sunrise {
+  background: linear-gradient(135deg, #FF9800 0%, #FFC107 100%);
+}
+
+.bg-gradient-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.bg-gradient-dark-glass {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom micro-interactions and transitions */
+.hover-premium {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-premium:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -10px rgba(10, 123, 71, 0.15);
+}
+
+/* Pulse soft green indicator */
+@keyframes pulse-soft-green {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.85;
+  }
+}
+
+.animate-pulse-green {
+  animation: pulse-soft-green 3s infinite ease-in-out;
+}
+

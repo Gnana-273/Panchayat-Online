@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Allow read/write access on all collections because the client-side network is disabled,
+    // and the backend Express server proxies all DB operations as an unauthenticated client.
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
