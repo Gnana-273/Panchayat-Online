@@ -1,18 +1,13 @@
 > ## SEE THIS, ALERT, PLEASE
 >  ## ⚠️ Important Kind Notice for Evaluators
 >
-> **To explore the Panchayat Officer Profile, please use the following demo credentials:**
+> **To explore the Citizen or Panchayat Officer Profiles, please read the NOTE:**
 >
-> **Officer Login**
 >
-><h1> **Email:** `vishwarojugnanashashank@gmail.com`</h1>
->
-><h1> **Password:** `officer123`</h1>
->
-> **Note:**
-><h2> -press " Forgot? " while logging in to citizen profile, for automatically entering login details</h2>
+> **NOTE:**
+><h2> -press " Forgot? " while logging in to any profile, for automatically entering login details</h2>
 > 
-<h2>-I am extremely sorry for the Inconveince</h2>
+<h2>-I am extremely sorry for the Inconveince(if any)</h2>
 >
 > <B>Thank you</B> for evaluating **Panchayat Online**.
 >
